@@ -39,7 +39,7 @@
 
 .header {
   margin-top: 0;
-  background: black;
+  background: rgba(205, 102, 240, 0.489);
   height: 35px;
   color: white;
   text-align: center;
@@ -47,15 +47,49 @@
 }
 
 .starship {
-  height: 50px;
-  width: 150px; 
-  margin: 10px;
-  padding: 20px 10px;
+  width: 150px;
+  height: 70px;
   display: inline-flex;
-  background-color: rgba(3, 59, 3, 0.8);
-  color: white;
-  text-decoration: none;
-  border-radius: 5px; 
-  text-align: center;
+  list-style: none;
+  border-radius: 5px;
+  margin: 15px;
+  margin-left: 100px;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid rgb(140, 140, 140);
+  background: linear-gradient(165deg, rgb(198, 109, 242), rgb(43, 243, 216));
+  font-weight: bolder;
 }
 
+.ship-info {
+  margin: 0 auto;
+  border: 2px solid rgba(0, 0, 255, 0.399);
+  text-align: center;
+  margin-top: 150px;
+  width: 400px;
+  height: 150px;
+  background: rgba(111, 188, 243, 0.706);
+  border-radius: 25px;
+  color: rgb(141, 55, 226);
+}
+
+.name, .model{
+  border-bottom: 2px dotted rgba(255, 255, 0, 0.543);
+}
+
+.name {
+  color: rgba(235, 29, 19, 0.723);
+}
+
+.model {
+  color: rgba(11, 71, 175, 0.747)
+}
+
+button {
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid rgba(255, 255, 0, 0.742);
+  background: rgba(214, 68, 240, 0.408);
+  font-weight: bolder;
+  cursor: pointer;
+}

@@ -17,11 +17,11 @@ const StarshipDetails = () => {
 
   return (
     <>
-      <div>
+      <div class="ship-info">
         {starshipDetails.name ?
           <>
-            <h3>Ship Name:{starshipDetails.name}</h3>
-            <h3>Ship Model:{starshipDetails.model}</h3> 
+            <h3 class="name">Ship Name: {starshipDetails.name}</h3>
+            <h3 class="model">Ship Model: {starshipDetails.model}</h3> 
             <Link to="/">
               <button type="submit">Return</button>  
             </Link>         

@@ -15,11 +15,11 @@ const StarshipPage = () => {
   
   return (
     <>
-      <h3>Ships</h3>
+      <h3 class="header">STAR WARS STARSHIPS</h3>
       {starships.length ?
         <>
           {starships.map(starship =>
-            <div key={starship.index}>
+            <div class="starship" key={starship.index}>
               <Link to="/starship" state={{starship}}>{starship.name}</Link>
             </div>
           )}
