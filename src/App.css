@@ -67,7 +67,7 @@
   text-align: center;
   margin-top: 150px;
   width: 400px;
-  height: 150px;
+  height: 170px;
   background: rgba(111, 188, 243, 0.706);
   border-radius: 25px;
   color: rgb(141, 55, 226);
@@ -75,6 +75,7 @@
 
 .name, .model{
   border-bottom: 2px dotted rgba(255, 255, 0, 0.543);
+  padding-bottom: 5px;
 }
 
 .name {
@@ -86,10 +87,22 @@
 }
 
 button {
-  padding: 5px;
-  border-radius: 5px;
+  padding: 8px;
+  border-radius: 25px;
   border: 2px solid rgba(255, 255, 0, 0.742);
   background: rgba(214, 68, 240, 0.408);
   font-weight: bolder;
   cursor: pointer;
+}
+
+.loading {
+  margin: 100px auto;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+  border: 2px solid rgba(0, 0, 255, 0.532);
+  width: 300px;
+  border-radius: 20px;
+  background-color: #61dafb8a;
+  color: rgb(234, 77, 10);
 }

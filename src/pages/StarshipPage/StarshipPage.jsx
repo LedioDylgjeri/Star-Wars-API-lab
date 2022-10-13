@@ -26,7 +26,7 @@ const StarshipPage = () => {
         </>
           :
         <>
-        <h4>Loading Starship details</h4>
+        <h4 class="loading">Loading Starship details...</h4>
         </>
       }
     </>
