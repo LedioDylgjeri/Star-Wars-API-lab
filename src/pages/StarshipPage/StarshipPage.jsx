@@ -15,18 +15,20 @@ const StarshipPage = () => {
   
   return (
     <>
-      <div>
-        <h2 class="header">STAR WARS STARSHIPS</h2>
-        <div>
-          {starships.map(starship => 
-            <Link key={starship.name} to='/starship' state={{starship}}>
-              <div className="starship">
-                <h3 class="starship-name">{starship.name}</h3>
-              </div>
-            </Link>
+      <h3>Ships</h3>
+      {starships.length ?
+        <>
+          {starships.map(starship =>
+            <div key={starship.index}>
+              <Link to="/starship" state={{starship}}>{starship.name}</Link>
+            </div>
           )}
-        </div>
-      </div>
+        </>
+          :
+        <>
+        <h4>Loading Starship details</h4>
+        </>
+      }
     </>
   )
 }

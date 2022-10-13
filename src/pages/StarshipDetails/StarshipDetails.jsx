@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom"
 import { getDetails } from "../../service/sw-api";
+import { Link } from "react-router-dom";
 
 const StarshipDetails = () => {
   const [starshipDetails, setStarshipDetails] = useState({})
@@ -19,8 +20,11 @@ const StarshipDetails = () => {
       <div>
         {starshipDetails.name ?
           <>
-            <h3>{starshipDetails.name}</h3>
-            <h3>{starshipDetails.model}</h3>          
+            <h3>Ship Name:{starshipDetails.name}</h3>
+            <h3>Ship Model:{starshipDetails.model}</h3> 
+            <Link to="/">
+              <button type="submit">Return</button>  
+            </Link>         
           </>
           :
           <>
